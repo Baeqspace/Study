@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Study</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <style></style>
+</head>
+<body>
+    <div class="category">Все тесты</div>
+    <div class="category-choose hidden">
+        <p class="cat-ch-text">Выберите категорию задания</p>
+        <div class="categories-grid">
+            <div class="category-unit all-categs">Все тесты</div>
+        </div>
+    </div>
+    <div class="add-test">+</div>
+    <div class="header-hor-line"></div>
+    <div class="reload material-icons">refresh</div>
+    <div class="coins"></div>
+    <div class="shop-button material-icons">shopping_cart</div>
+    <div class="shop hidden">
+        <div class="shop-text">Выберите товар для покупки</div>
+        <div class="shop-text price">Общая цена - 1<div class="material-icons">monetization_on</div></div>
+        <div class="shop-grid">
+            <div class="buy-color">Цвет прогресса<input type="color"><div class="confirm">Сменить</div></div>
+            <div class="buy-font">Шрифт
+                <select>
+                    <option>Arial</option>
+                    <option>Segoe UI</option>
+                    <option>Comic Sans MS</option>
+                    <option>Impact</option>
+                </select>
+                <div class="confirm">Сменить</div>
+            </div>
+            <div class="buy-lucky">Удачное число
+                <div class="confirm">Узнать</div>
+            </div>
+            <div class="buy-pacman">Сыграть в Pacman
+                <div class="confirm">Играть</div>
+            </div>
+        </div>
+    </div>
+    <div class="for-icons material-icons">monetization_on</div>
+    <div class="tests-container"></div>
+    <div class="drag-and-drop hidden">Отпустите, чтобы добавить</div>
+    <div class="new-test-option hidden">
+        <p class="nto-text">Как вы хотите добавить новый тест?</p>
+        <div class="open-editor button">Создать тест (редактор)</div>
+        <label class="open-exist button"><input id="test-upload" type="file" accept=".json" multiple>Открыть готовый тест</label>
+    </div>
+    <div class="test-viewer hidden">
+        <div class="check-answers">Проверить!</div>
+        <div class="attempts-corrects">
+            <p class="attempts"></p>
+            <p class="corrects"></p>
+        </div>
+        <div class="viewer-close">Закрыть</div>
+    </div>
+    <div class="editor hidden">
+        <div class="editor-main-area"></div>
+        <input id="test-name" type="text" placeholder="Введите название...">
+        <select id="category-select">
+            <option>Математика</option>
+            <option>Русский язык</option>
+            <option>Информатика</option>
+            <option>Английский язык</option>
+        </select>
+        <label class="choose-attempts">Кол-во попыток <input type="number" id="attemptsTotal" placeholder="неогр."></label>
+        <div class="new-task button">Создать задание</div>
+        <div class="save button">Сохранить тест</div>
+        <div class="editor-close">Закрыть</div>
+    </div>
+</body>
+</html>
